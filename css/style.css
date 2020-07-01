@@ -1,0 +1,113 @@
+*{margin:0;padding:0;}
+/*悬浮框*/
+#float_banner{position:absolute;top:0;width:100%;height:50px;line-height:30px;text-align:center;background:#5D6D8C;color:#fff;font-size:14px;font-weight:bold;z-index:2;z-index:10;}
+ul,li{list-style:none;}
+nav{margin:0 auto;border:1px solid #5D6D8C;}
+
+ul li.item{width:260px;float:left;margin-left:70px;color:white;font-size:24px;font-weight:bold;height:40px;line-height:40px;}
+ul li.mainitem{width:100px;float:right;margin:0;margin-left:150px;color:white;font-size:24px;font-weight:bold;height:40px;line-height:40px;}
+ul li a{color: aliceblue;text-decoration: none;}
+
+#nav ul li a{display:block;width:100px;text-decoration:none;font-size:24px;
+			color:#ffffff;background-color:rgba(255,255,255,0.00);}		
+#nav li{position:relative;margin-bottom:2px;padding-left:10px;float:left;}
+#nav li ul{position:absolute;left:3.5px;top:22px;display:none;width:120px;}
+#nav li ul li a{;width:100px;}
+#nav li:hover ul{display:block;margin-top: 18px;background-color:#5D6D8C;background-size:100px;}
+
+
+
+
+/*第一部分*/
+.centered { text-align:center;margin-top:50px} 
+.centered1{margin-top:50px;z-index:5;}
+#adBanner { display: table-cell;width:100%;height: 600px; } 
+article{margin-top:20px;margin-left:20px;max-width:60em;height:5em;font-size:24px;text-indent:2em;text-align:center;}
+p{margin-left: 200px;margin-top: 50px;font-size: 20px;}
+.h02{
+	align-content: center;
+	text-align: center;
+	font-family: "微软雅黑 Light";
+	color: azure;
+	font-size: 18px;
+	background-color:#5D6D8C;
+	width: 20%;
+	margin-top:20px;
+	margin-botto: 20%;
+	margin-left: 40%;
+	padding: 10px;
+}
+#container1{
+	align-content: center;
+	margin-top: 2%;
+	margin-left: 150px;
+}
+  .tagBall{
+      width: 800px;
+      height: 600px;
+      margin:10px auto;
+	  padding-top:0 auto;
+      position: relative;
+	  z-index:4;
+    }
+    .tag{
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      color: #000;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: "微软雅黑";
+      font-weight: bold;
+		z-index:3;
+    }
+    .tag:hover{border:1px solid #666;}
+
+.mainContainer{margin-top:50px;z-index:5;}
+.container{background-color: #FFF;
+				       opacity: 0.8;
+				       width:1280px;
+			           overflow: hidden;
+margin-left: 150px;}
+			table{border-collapse: collapse;
+				margin-top: 40px;
+				  border:0.5px solid;
+				margin-left: 150px;
+			     }
+			/*表格表头设置*/
+			th{background-color:#194780;
+			   font-size: 14px;
+			   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+}
+			/*单元格设置*/
+			td{background: transparent;
+			   font-size:15px;
+			   border: 0.25px solid;
+			   border-color: darkgray;}
+td a{color:#194780;text-decoration: none;}
+			/*字母顺序表头单元格设置*/
+			.seq{width: 20px;
+				border: #D9E8F5 solid;
+				background-color:#194780;
+				margin: 150px;
+			    }
+			/*学校单元格设置*/
+			.schoolName{width:600px;
+			      text-align: center;
+					height: 25px;
+					}
+/*学校2单元格设置*/
+			.name{width:600px;
+			      text-align: center;
+					height: 25px;
+					background-color:  #D9E8F5}
+			/*链接单元格设置*/
+			.baolubi{width: 600px;
+			          text-align: center;}
+.end{font-size: 20px;text-indent:2em;}
+.width7{
+	margin: 20px 50px;
+	width: 1280px;
+        }
+			footer{width:100%;height:2em;background-color:#D9E8F5;color:#ffffff;text-align:center;padding-top:10px;}

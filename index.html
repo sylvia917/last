@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>吾行吾道，虽远必至</title>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylesheet1.css"/>
+	<link rel="stylesheet" href="css/stylesheet2.css"/>
+
+    <script src="js/main.js"></script>
+
+
+</head>
+	
+<body>
+	<!--顶部悬浮导航栏-->
+<div id="float_banner">
+<ul id="nav">
+	<li class="item">戒空戒松 从“研”以终</li>
+	
+	<li class="mainitem"><a href="#home">首页</a></li>
+	
+	<li class="mainitem"><a href="#zhuanye">热门专业</a>
+		<ul>
+		
+		<li><a href="#yuanxiao">热门院校</a></li>
+		<li><a href="#baolubi">报录比</a></li>
+		
+		 </ul>
+		 </li>
+	
+	
+	<li class="mainitem"><a href="#renshu">考研数据</a>
+	<ul>
+		<li><a href="#bili">男女比例</a></li>
+		<li><a href="#zhuanshuo">专硕学硕</a></li>
+	</ul>
+		</li>
+	
+	
+		<li class="mainitem"><a href="#liucheng">考研相关</a>
+	<ul><li><a href="#fenshu">分数要求</a></li>
+	<li><a href="#xuezhi">学制区别</a></li>
+		
+	</ul>
+	</li>
+	
+	</ul>
+	</div> 
+   <script src="js/navigationScript.js"></script>
+
+	<!--首页图片轮播-->
+	 <div class="centered">
+     <a id="home"></a>
+							<img src="img/indexImg01.jpg" id="adBanner" alt="图片">
+				 </div>
+				
+	<article class="article">
+	  &nbsp;如果说高考是千军万马过独木桥，那么考研更像是一个人的战斗。<br>在那个没有硝烟的战场上，你既是指挥的将军，也是打仗的士兵。
+	</article>
+	
+
+	
+	<!--热门专业对比图-->
+     
+       <!--start-->
+	<a id="yuanxiao"></a>
+       <h1 class="h02">热门院校报考人数</h1>
+	<p>15个热门院校2020年报考人数及同比增长</p>
+		<div id="container1" style="height: 550%;width: 80%">
+		<script type="text/javascript" src="js/echart.min.js"></script>
+
+			   <script type="text/javascript">
+		var dom = document.getElementById("container1");
+		var myChart = echarts.init(dom);
+		var app = {};
+
+		option = null;
+		app.title = '折柱混合';
+
+		option = {
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'cross',
+					crossStyle: {
+						color: 'red'
+					},
+
+				}
+			},
+			color : ['#194780','#darkblue'],
+			calculable:true,
+			toolbox: {
+				feature: {
+					dataView: {show: true, readOnly: false},
+					magicType: {show: true, type: ['line', 'bar']},
+					restore: {show: true},
+					saveAsImage: {show: true},
+
+				}
+			},
+
+			legend: {
+				data:['2020年','同比增长']
+			},
+			xAxis: [
+				{
+					type: 'category',
+					data: ['北京大学','西安交通大学','中国海洋大学','华南师范大学','南昌大学','北京理工大学','南京航空航天大学','华东理工大学','新疆大学','西北大学','广东工业大学','安徽师范大学','山西财经大学','青岛大学','西北师范大学'],
+					axisPointer: {
+						type: 'shadow'
+					}
+				}
+			],
+			yAxis: [
+				{
+					type: 'value',
+					name: '人数',
+					min: 0,
+					max: 40000,
+					interval:10000,
+					axisLabel: {
+						formatter: '{value} 个'
+					}
+				},
+				{
+					type: 'value',
+					name: '百分比',
+					min: 0,
+					max: 80,
+					interval: 5,
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				}
+			],
+			series: [
+				{
+					name:'2020年',
+					type:'bar',
+					data:[29990, 20492, 18025, 25603, 22131, 14720,11432,12600,11095,18455,13256,10247,10773,16749,12159]
+				},
+
+				{
+					name:'同比增长',
+					type:'line',
+					yAxisIndex: 1,
+					data:[3,37.7,18.8,15.7,39.3,13,12,21.4,59.8,38.2,31.2,43.6,22,34.23,18.04]
+				}
+			]
+		};
+		;
+		if (option && typeof option === "object") {
+			myChart.setOption(option, true);
+		}
+			   </script>
+			</div>
+	
+       <!--end-->
+
+	<br>
+	<br>
+       	<!--热门专业图-->
+     
+<div class="centered1">
+	<a id="zhuanye"></a>
+	 <h1 class="h02">热门专业</h1>
+	
+<div class="tagBall">
+  <a class="tag" href="#">会计学</a>
+  <a class="tag" href="#">行政管理</a>
+  <a class="tag" href="#">金融学</a>
+  <a class="tag" href="#">企业管理</a>
+  <a class="tag" href="#">管理科学与工程</a>
+  <a class="tag" href="#">英语语言文学</a>
+  <a class="tag" href="#">计算机应用技术</a>
+  <a class="tag" href="#">产业经济学</a>
+  <a class="tag" href="#">思想政治教育</a>
+  <a class="tag" href="#">会计硕士</a>
+  <a class="tag" href="#">应用心理学</a>
+  <a class="tag" href="#">课程与教学论</a>
+  <a class="tag" href="#">区域经济学</a>
+  <a class="tag" href="#">通信与信息系统</a>
+  <a class="tag" href="#">国际贸易学</a>
+  <a class="tag" href="#">马克思主义哲学</a>
+  <a class="tag" href="#">政治经济学</a>
+  <a class="tag" href="#">外国语言学及应用语言学</a>
+  <a class="tag" href="#">机械制造及其自动化</a>
+  <a class="tag" href="#">生物化学与分子生物学</a>
+  <a class="tag" href="#">旅游管理</a>
+  <a class="tag" href="#">中国哲学</a>
+  <a class="tag" href="#">人文地理学</a>
+  <a class="tag" href="#">金融硕士</a>
+  <a class="tag" href="#">科学技术哲学</a>
+  <a class="tag" href="#">伦理学</a>
+  <a class="tag" href="#">应用数学</a>
+  <a class="tag" href="#">分析化学</a>
+  <a class="tag" href="#">微生物学</a>
+  <a class="tag" href="#">西方经济学</a>
+  <a class="tag" href="#">国民经济学</a>
+  <a class="tag" href="#">车辆工程</a>
+  <a class="tag" href="#">新闻学</a>
+  <a class="tag" href="#">汉语言文字学</a>
+  <a class="tag" href="#">传播学</a>
+  <a class="tag" href="#">应用化学</a>
+  <a class="tag" href="#">教育学</a>
+</div>
+			<script src="js/section1.js"></script>
+	</div>
+	
+	<!--30所热门高校报录比-->
+	<div class="mainContainer">
+		<a id="baolubi"></a>
+	<h1 class="h02">热门高校报录比</h1>
+<p>30个热门高校历年报录比（点击查看）</p>
+	<br>
+<div class="container">
+	  <table>
+		  <tr>
+			  <th class="seq" rowspan="3">B</th>
+			  <td class="schoolName">北京师范大学</td>
+			  <td class="name">Beijing Normal University</td>
+			  <td class="baolubi"><a href="http://yz.bnu.edu.cn/detail/b1550f79">2017年-2019年</a></td>
+		  </tr>
+		  
+		  <tr>
+			  <td class="schoolName">北京林业大学</td>
+			  <td class="name">Beijing Forestry University</td>
+			  <td class="baolubi"><a href="http://graduate.bjfu.edu.cn/zsgl/lnzstj/index.html">2013年-2019年</a></td>
+		  </tr>
+		  
+		  <tr>
+		      <td class="schoolName">北京航空航天大学</td>
+			  <td class="name">Beihang University</td>
+			  <td class="baolubi"><a href="http://yzb.buaa.edu.cn/wnzx/lnlqtjxx.htm">2002年-2019年</a></td>
+		  </tr>
+		  
+		<tr>
+			  <th class="seq" rowspan="4">D</th>
+			  <td class="schoolName">大连理工大学</td>
+			  <td class="name">Dalian University of Technology</td>
+			<td class="baolubi"><a href="http://gs.dlut.edu.cn/yjszs/fwxx/sslnbmlqqk.htm">2016年-2019年</a></td>
+		  </tr>
+			
+			<tr>
+			  <td class="schoolName">东北大学</td>
+			  <td class="name">Northeastern University</td>
+				<td class="baolubi"><a href="http://www.graduate.neu.edu.cn/4208/list1.htm">2016年-2019年</a></td>
+			</tr>
+		  <tr>
+			  <td class="schoolName">东华大学</td>
+			  <td class="name">Donghua University</td>
+				<td class="baolubi"><a href="http://yjszs.dhu.edu.cn/lqbl_8883/list.htm">2015年-2019年</a></td>
+			</tr>
+			<tr>
+			  <td class="schoolName">东南大学</td>
+			  <td class="name">Southeast University</td>
+				<td class="baolubi"><a href="https://yzb.seu.edu.cn/6671/list.htm">2008年-2019年</a></td>
+			</tr>
+
+			  <tr>
+				  <th class="seq">G</th>
+				  <td class="schoolName">国防科技大学</td>
+				  <td class="name">National University of Defense Technology</td>
+				  <td class="baolubi"><a href="http://yjszs.nudt.edu.cn/pubweb/homePageList/detailed.view?keyId=420">2017年-2019年</a></td>
+			  </tr>
+
+			  <tr>
+				  <th class="seq" rowspan="3">H</th>
+				  <td class="schoolName">湖南大学</td>
+				  <td class="name">Hunan University</td>
+				  <td class="baolubi"><a href="http://gra.hnu.edu.cn/zsxx/sjtj.htm">2013年-2019年</a></td>
+			  </tr>
+			    			<tr>
+			  <td class="schoolName">华南理工大学</td>
+			  <td class="name">South China University of Technology</td>
+				<td class="baolubi"><a href="http://admission.scut.edu.cn/17541/list.htm">2012年-2019年</a></td>
+			</tr>
+			  			<tr>
+			  <td class="schoolName">华中农业大学</td>
+			  <td class="name">Huazhong Agricultural University</td>
+				<td class="baolubi"><a href="https://cdn1.kybimg.com/ohr/2019/06/20/161824_5d0b415090a5c.pdf">2019年</a></td>
+			</tr>
+	
+			  <tr>
+				  <th class="seq">J</th>
+				  <td class="schoolName">江苏大学</td>
+				  <td class="name">Jiangsu University</td>
+				  <td class="baolubi"><a href="http://yz.ujs.edu.cn/index/gzdtyxxfw.htm">2015年-2019年</a></td>
+			  </tr>
+
+
+			  <tr>
+				  <th class="seq">L</th>
+				  <td class="schoolName">兰州大学</td>
+				  <td class="name">Lanzhou University</td>
+				  <td class="baolubi"><a href="http://yz.lzu.edu.cn/lzupage/B20160906111049.html">2012年-2019年</a></td>
+			  </tr>
+			  
+			  <tr>
+				  <th class="seq" rowspan="2">N</th>
+				  <td class="schoolName">南京大学</td>
+				  <td class="name">Nanjing University</td>
+				  <td class="baolubi"><a href="http://grawww.nju.edu.cn/912/list1.htm">2003年-2019年</a></td>
+			  </tr>
+			  <tr>
+				  <td class="schoolName">南开大学</td>
+				  <td class="name">Nankai University, NKU</td>
+				  <td class="baolubi"><a href="http://yzb.nankai.edu.cn/2575/list.htm">2015年-2019年</a></td>
+			  </tr>
+		
+			  <tr>
+				  <th class="seq" rowspan="6">S</th>
+				  <td class="schoolName">上海财经大学</td>
+				  <td class="name">Shanghai University of Finance and Economics</td>
+				  <td class="baolubi"><a href="https://gs.sufe.edu.cn/Home/NewsList/157">1999年-2019年</a></td>
+			  </tr>
+		  
+			  <tr>
+				  <td class="schoolName">深圳大学</td>
+				  <td class="name">Shenzhen University</td>
+				  <td class="baolubi"><a href="https://yz.szu.edu.cn/info/1031/11111.htm">2008年-2019年</a></td>
+			  </tr>
+			  
+			<tr>
+				  <td class="schoolName">首都经济贸易大学</td>
+				  <td class="name">Capital University of Economics and Business</td>
+				<td class="baolubi"><a href="https://yjs.cueb.edu.cn/zsks/skzl/index.htm">2014年-2019年</a></td>
+			  </tr>
+			  <tr>
+				  <td class="schoolName">上海交通大学</td>
+				  <td class="name">Shanghai Jiao Tong University</td>
+				  <td class="baolubi"><a href="https://yzb.sjtu.edu.cn/xxgs1/lssj/wnbklqtj.htm">2004年-2019年</a></td>
+			  </tr>
+			  
+			  <tr>
+				  <td class="schoolName">山东大学</td>
+				  <td class="name">Shandong University</td>
+				  <td class="baolubi"><a href="http://www.yz.sdu.edu.cn/bkzn/ssblb.htm">2016年-2018年</a></td>
+			  </tr>
+			  
+			  <tr>
+				  <td class="schoolName">陕西师范大学</td>
+				  <td class="name">Shaanxi Normal University</td>
+				  <td class="baolubi"><a href="http://yz.snnu.edu.cn/xxcx/lnfsx.htm">2012年-2018年</a></td>
+			  </tr>
+			  
+			  
+			<tr>
+				<th class="seq">T</th>
+				<td class="schoolName">同济大学</td>
+				<td class="name">Tongji University</td>
+				<td class="baolubi"><a href="http://yz.tongji.edu.cn/lssj/wnbklqtj_.htm">2008年-2019年</a></td>
+			</tr>
+		
+
+			<tr>
+				<th class="seq" rowspan="2">X</th>
+				<td class="schoolName">西南财经大学</td>
+				<td class="name">Southwestern University of Finance and Economics</td>
+				<td class="baolubi"><a href="http://yz.swufe.edu.cn/chaxun/yzbwww/tjss/ss_search.asp">2000年-2019年</a></td>
+			</tr>
+		
+			<tr>
+				<td class="schoolName">厦门大学</td>
+				<td class="name">Xiamen University</td>
+				<td class="baolubi"><a href="https://zs.xmu.edu.cn/2019/0919/c5797a377559/page.htm">2014年-2019年</a></td>
+			</tr>
+
+
+			<tr>
+				<th class="seq">Y</th>
+				<td class="schoolName">云南大学</td>
+				<td class="name">Yunnan University</td>
+				<td class="baolubi"><a href="http://www.grs.ynu.edu.cn/zsgz/qrzssyjs.htm">2006年-2019年</a></td>
+			</tr>
+
+
+			<tr>
+				<th class="seq" rowspan="4">Z</th>
+				<td class="schoolName">浙江大学</td>
+				<td class="name">Zhejiang University</td>
+				<td class="baolubi"><a href="http://grs.zju.edu.cn/yjszs/redir.php?catalog_id=131825">2005年-2018年</a></td>
+			</tr>
+		
+			<tr>
+				<td class="schoolName">中国海洋大学</td>
+				<td class="name">Ocean University of China</td>
+				<td class="baolubi"><a href="http://yz.ouc.edu.cn/5924/list1.htm">2011年-2017年</a></td>
+			</tr>
+		
+			<tr>
+				<td class="schoolName">中国人民大学</td>
+				<td class="name">Renmin University of China</td>
+				<td class="baolubi"><a href="http://pgs.ruc.edu.cn/xgxz.htm">2017年-2018年</a></td>
+			</tr>
+			
+			<tr>
+				<td class="schoolName">中南财经政法大学</td>
+				<td class="name">Zhongnan University of Economics and Law</td>
+				<td class="baolubi"><a href="http://yzb.zuel.edu.cn/4637/list.htm">2007年-2019年</a></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	
+	<!--考研数据-->
+
+	<!--第一部分多个省市报考人数增加-->
+	<div class="width3">
+		<a id="renshu"></a>
+		<h1 class="title">多个省市报考人数增加</h1>
+		<p class="word">下面，我们以几个省的数据来说明:</p>
+	</div>
+        <div class="width">
+			<div class="part1-left"><img src="img/山东.jpg" width="526px" height="448px" alt="山东研究生报考趋势"></div>
+			<div class="part1-right">
+				<p>山东作为生源大省，2020年考研人数达313190人，同比增长17.6%，为历年最多。</p>
+			</div>
+	</div>
+		<!--山东省-->
+		<div class="width">
+			<div class="part2-left">
+				<p>2020年，四川省研究生招生考试报名人数再度飙升，有效报名人数达到了174815人，较2019年增加了33029人，增幅为23.29%。</p>
+			</div>
+			<div class="part2-right"><img src="img/四川.jpg" width="524px" height="448px" alt="四川研究生报考趋势"></div>
+		</div>
+		<!--四川省-->
+		<div class="width">
+			<div class="part3-left"><img src="img/黑龙江.jpg" width="518px" height="448px" alt="黑龙江研究生报考趋势"></div>
+			<div class="part3-right">
+			     <p>黑龙江省2020年硕士研究生招生考试共计报名99126人，比2019年增加了8660人，增幅为9.57%，这是该省研究生报考人数连续第五年增长。</p>
+			</div>
+		</div>
+		<!--黑龙江省-->
+		<div class="width">
+			<div class="part4-left">
+				<p>2018年河北省共报考120580人，比2017年增加17525人，增幅为17.0%。报名人数和增幅均创历史新高。</p>
+			</div>
+			<div class="part4-right"><img src="img/河北.jpg" width="524" height="448" alt="河北研究生报考趋势"></div>
+		</div>
+		<!--河北省-->
+	
+
+	<div class="width1">
+		<!--第二部分全国男女考研占比-->
+		<a id="bili"></a>
+		<h1 class="title">全国男女考研占比</h1>
+		<p class="word">硕士研究生招生规模不断增长的同时，女生考取研究生的比例不断提高，女生成考研群体主流。</p>
+	</div>
+	<div class="width4">
+		<div class="part6"><img src="img/男女比.jpg" width="1166" height="520" alt="全国男女考研占比"></div>
+</div>
+
+
+		<!--第三部分专硕与学硕报考情况-->
+			<div class="width5">
+		<a id="zhuanshuo"></a>
+		<h1 class="title">专硕与学硕报考情况</h1>
+		<p class="word">
+			近年来，由于招生计划增加的影响，除了总体报名人数呈上涨趋势之外，专硕的报考人数增长明显，多地甚至出现专硕报考人数超过学硕的现象。
+			<br><br>下面以河北，湖北为例：
+		</p>
+			</div>
+	
+		<div class="part5-left"><img src="img/河北专硕与学硕占比.jpg" width="580" height="448" alt="河北专硕与学硕占比"></div>
+		<div class="part5-right"><img src="img/湖北.jpg" width="580" height="448" alt="湖北专硕与学硕占比"></div>
+
+	<!--第三部分考研数据-->
+	<div class="width5">
+		<a id="liucheng"></a>
+			<h1 class="title">考试流程及时间</h1>
+		
+		<table class="pure-table">
+        <thead>
+            <tr>
+                <th>考研流程</th>
+                <th>考试时间</th>   
+            </tr>
+        </thead>
+	  
+        <tbody>
+            <tr class="pure-table-odd">
+                <td>网上咨询</td>
+                <td>9月12日-9月14日</td>
+            </tr>
+            <tr>
+                <td>预报名</td>
+                <td>9月25-9月30日(应届本科生)</td>           
+            </tr> 
+            <tr class="pure-table-odd">
+                <td>正式报名</td>
+                <td>10月10日-10月31日，每天9：00-22：00</td>          
+            </tr>  
+            <tr>
+                <td>现场确认</td>
+                <td>11月10日-11月14日</td>
+            </tr> 
+            <tr class="pure-table-odd">
+                <td>初试时间</td>
+                <td>预计每年12月第三个周六日</td>             
+            </tr>
+            <tr>
+                <td>复试时间</td>
+				<td>一般在3-5月</td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+	
+	<div class="width5">
+		<a id="fenshu"></a>
+	<h1 class="title">考研分数（500分)</h1> 
+	<div class="imgBox">
+	<img src="img/picture01.jpg" height="500" width="1000" style="margin: 0 auto" alt="考研"></div>
+	</div>
+	
+<div class="width6">
+<br>
+<br>	
+	<h1 class="title">全日制与非全日制</h1> 
+		<a id="xuezhi"></a>
+	<table class="pure-table pure-table-bordered">
+        <thead>
+            <tr>
+                <th>区别</th>
+                <th>全日制</th>
+                <th>非全日制</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>毕业证书</td>
+                <td>标有“非全日制”字样</td>
+                <td>标有“全日制”字样</td>
+            </tr>
+    
+            <tr>
+                <td>招生对象</td>
+                <td>有一定工作年限和经验的在职人员</td>
+                <td>应届本科毕业生</td>
+            </tr>
+    
+            <tr>
+                <td>上课方式</td>
+                <td>非脱产学习、周末或是节假日集中上课</td>
+                <td>全脱产学习、周一到周五全日制授课</td>
+            </tr>
+			<tr>
+                <td>学制</td>
+                <td>2-3年，特殊情况可适当延长至5年</td>
+                <td>一般是2-3年</td>
+            </tr>
+			<tr>
+                <td>户口档案</td>
+                <td>不涉及到户口及档案调转</td>
+                <td>考生自愿选择是否调转户口。</td>
+            </tr>
+			<tr>
+                <td>派遣证</td>
+                <td>没有派遣证</td>
+                <td>有派遣证，是毕业生参加工作时间的初始记载和凭证</td>
+            </tr>
+			<tr>
+                <td>学费</td>
+                <td>一般在5到15万元不等</td>
+                <td>学术型硕士学费标准为每年不超过8000元人民币</td>
+            </tr>
+			<tr>
+                <td>奖学金</td>
+                <td>没有奖学金</td>
+                <td>全日制研究生有奖学金</td>
+            </tr>
+        </tbody>
+	</table>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="width7">
+	<p class="end">
+		考研是一个人探索和成长的过程，有时会感到寂寞、孤独，绝望到想哭，身边却没有人可以诉苦，有时会感到无助心酸，就好像处在黑暗之中，却看不到一丝的光亮。</p>
+		<p class="end">
+			考研不简单，实现自己的梦想也不容易，但是!不代表不可能，坚持，忍耐，拼搏。坚持就意味着成功，只要永不放弃，就还有希望。</p>
+		<p class="end">博尔赫斯说，我心里一直都在暗暗设想，天堂应该是图书馆的模样。</p>
+		<p class="end">以梦为马，你所受的苦，终将照亮你前行的路。</p>
+
+		
+	
+	
+	</div>
+	<!--主体内容部分结束-->
+	<br>
+	<br>
+	<br>
+	<!--页脚-->
+				<footer>
+				<a href="#home">回到顶部</a>&nbsp;|&nbsp;
+				<a href="mailto:2253502012@qq.com">联系我们</a>&nbsp;
+			</footer>
+	
+</body>
+<script type="text/javascript">
+	window.onload = rotate; //当窗口加载完成时，触发rotate函数-->
+     
+    var thisAd = 0; 
+     
+    function rotate(){ 
+		 "use strict";
+     var adImages = new Array("img/indexImg55.jpg","img/indexImg05.jpg","img/indexImg11.jpg","img/indexImg01.jpg","img/indexImg22.jpg","img/indexImg02.jpg","img/indexImg33.jpg","img/indexImg03.jpg","img/indexImg44.jpg","img/indexImg04.jpg"); 
+         
+        thisAd++; 
+        if(thisAd === adImages.length){ 
+			//如果thisAd的值等于adImages数组中成员的数量，将其设置为0，实现循环
+            thisAd=0; 
+            } 
+        document.getElementById("adBanner").src = adImages[thisAd]; 
+         
+        setTimeout(rotate,1*1000); 
+	}
+//HTML DOM setTimeout()方法，用于在指定的毫秒数后调用函数或计算表达式。只执行code一次。
+//setTimeout(code,millisec)，millisec指定执行code间隔的时间，本例中图像每隔2秒改变一次
+	</script>
+</html>
